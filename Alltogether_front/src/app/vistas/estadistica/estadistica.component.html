@@ -1,0 +1,75 @@
+
+    <!-- ***** Call to Action Start ***** -->
+    <section class="section section-bg" id="call-to-action" style="background-image: url(assets/images/about-image-1-940x460.jpg);">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-10 offset-lg-1">
+                  <div class="cta-content">
+                    
+                    <h2><em>Nuestras estadísticas</em></h2>
+                     
+
+                    
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- ***** Call to Action End ***** -->
+
+
+<div class="container">
+  
+
+  <div class="row">
+    <div class="col-lg-6" id="graf">
+     <p>Personas dentro de la plataforma</p>
+      <div style="display: block;">
+        <canvas baseChart 
+          [data]="pieChartData" 
+          [labels]="pieChartLabels" 
+          [chartType]="pieChartType"
+          [options]="pieChartOptions"
+          [plugins]="pieChartPlugins"
+          [legend]="pieChartLegend">
+        </canvas>
+      </div>
+    </div>
+    <div class="col-lg-6" id="graf">
+      <p>Personas que ofrecen trabajos vs Personas que buscan trabajo</p>
+      <div style="display: block;">
+        <canvas baseChart 
+          [data]="pieChartData2" 
+          [labels]="pieChartLabels2" 
+          [chartType]="pieChartType2"
+          [options]="pieChartOptions"
+          [plugins]="pieChartPlugins2"
+          [legend]="pieChartLegend2">
+        </canvas>
+      </div>
+    </div>
+  </div>
+
+  <div id="graf">
+    <p>Usuarios nuevos por mes</p>
+    <div style="display: block;">
+      <canvas baseChart 
+        [datasets]="lineChartData"
+        [labels]="lineChartLabels"
+        [options]="lineChartOptions"
+        [colors]="lineChartColors"
+        [legend]="lineChartLegend"
+        [chartType]="lineChartType"
+        [plugins]="lineChartPlugins">
+      </canvas>
+    </div>
+  </div>
+  
+  
+</div>
+
+
+
+
+
+

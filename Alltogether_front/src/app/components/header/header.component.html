@@ -1,0 +1,61 @@
+<div id="js-preloader" class="js-preloader">
+  <div class="preloader-inner">
+    <span class="dot"></span>
+    <div class="dots">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</div>
+<header class="header-area header-sticky">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="main-nav">
+          <!-- ***** Logo Start ***** -->
+          <a routerLink="" class="logo">All<em>Together</em></a>
+          <!-- ***** Logo End ***** -->
+          <!-- ***** Menu Start ***** -->
+          <ul class="nav">
+            <li>
+              <a routerLink="" class="active">Home</a>
+            </li>
+            <li>
+              <a routerLink="/trabajos">Trabajos</a>
+            </li>
+            <li>
+              <a routerLink="contact">Contactanos</a>
+            </li>
+            <li>
+              <a routerLink="/estadistica">Nuestras estadísticas</a>
+            </li>
+            <li>
+              <a routerLink="/login" *ngIf="!service.isLoggedIn()" >Login</a>
+              <a href="" (click)="logout();" *ngIf="service.isLoggedIn()">cerrar session</a>
+            </li>
+
+            <li>
+              <a routerLink="/perfilEmpleador">Perfil</a>
+            </li>
+
+            
+            <i class="dropdown" *ngIf="service.isLoggedIn()">
+              <i class="dropbtn"><i class="fas fa-user fa-lg" style="margin-top: 24%"></i></i>
+              <i class="dropdown-content">
+                <a routerLink="/perfilUsuario">perfil</a>
+              </i>
+            </i>
+
+
+
+          </ul>
+          <a class='menu-trigger'>
+            <span>Menu</span>
+          </a>
+          <!-- ***** Menu End ***** -->
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>

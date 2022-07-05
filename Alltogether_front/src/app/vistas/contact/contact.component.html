@@ -1,0 +1,94 @@
+<section class="section section-bg" id="call-to-action" style="background-image: url(assets/images/banner-image-1-1920x500.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <div class="cta-content">
+          <br>
+          <br>
+          <h2>Ponte en contacto con <em>nosotros</em></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="features">
+  <div class="container">
+    <div class="row text-center">
+
+      <div class="section-heading">
+        <h2>info de <em> contacto</em></h2>
+        <img src="assets/images/line-dec.png" alt="waves" style="padding-bottom: 90px">
+        <p style="font-size:150%; padding-top: 60px">Si tienes alguna duda o pregunta no dudes llenar la forma y nuestro equipo
+          se pondrá en contacto contigo. Adicionalmente también te puedes poner en
+          contacto con nosotros mediante nuestro número telefónico, y en ciertos casos,
+          nos puedes visitar en nuestra sede. </p>
+      </div>
+
+      <div class="col-md-3 offset-md-1">
+        <div class="icon">
+          <i class="fa fa-phone"></i>
+        </div>
+
+        <h5><a href="#">+52 826 159 3450</a></h5>
+
+        <br>
+      </div>
+
+      <div class="col-md-4">
+        <div class="icon">
+          <i class="fa fa-envelope"></i>
+        </div>
+
+        <h5><a href="#">4lltogether.1@gmail.com</a></h5>
+
+        <br>
+      </div>
+
+      <div class="col-md-3">
+        <div class="icon">
+          <i class="fa fa-map-marker"></i>
+        </div>
+
+        <h5><a href="#">Proximamente</a></h5>
+
+        <br>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="form-container" style="background-image: url(assets/images/contact-1-720x480.jpg)">
+    <form class="contact-form" (ngSubmit)="contactForm(forms.value)" #forms="ngForm">
+      <div style="padding-top: 40px;">
+        <div class="col-md-6 col-sm-12" style="float: left">
+          <fieldset>
+            <input type="text" id="name" placeholder="Full name" class="form-control" name="name" ngModel><br>
+
+          </fieldset>
+        </div>
+        <div class="col-md-6 col-sm-12" style="margin-left:50%">
+          <fieldset>
+            <input type="email" id="email" placeholder="Email" class="form-control" name="email" ngModel><br>
+          </fieldset>
+        </div>
+        <div class="col-md-12 col-sm-12">
+          <fieldset>
+            <input type="test" id="subject" placeholder="Subject" class="form-control" name="subject" ngModel><br>
+          </fieldset>
+        </div>
+        <div class="col-md-12 col-sm-12">
+          <fieldset>
+            <textarea id="message" placeholder="Message" cols="30" rows="10" class="form-control" name="message" ngModel></textarea><br>
+          </fieldset>
+        </div>
+        <div class="col-lg-12">
+          <fieldset>
+            <input type="submit" class="submit" value="Send Message">
+          </fieldset>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
